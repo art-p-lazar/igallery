@@ -95,7 +95,7 @@ body {
 
 .hero-txt{
   height: fit-content;
-  background: rgba(24, 22, 22, 0.8);
+  background: rgba(24, 22, 22, 0.5);
   border-radius: 20px;
   padding: 32px;
   margin-bottom: 20px;
@@ -124,10 +124,11 @@ body {
 .hero-search input {
   padding: 14px 18px;
   border-radius: 30px;
-  border: 2px solid #fff;
+  border: 3px solid #ffcc00;
   width: 60%;
   font-size: 20px;
   text-align: center;
+  background-color:rgba(247, 245, 245, 0.6);
 }
 
 .hero-search button {
@@ -296,8 +297,11 @@ body {
 }
 
   .hero-txt{
-    padding: 32px;
-    margin: 10px;
+    margin: 0;
+    padding: 0;
+    padding-right: 4rem;
+    padding-bottom: 20rem;
+    background: none;
   }
   
   .hero-logo img {
