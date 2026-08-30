@@ -4,7 +4,7 @@ for (let i = 1; i <= 300; i++) {
   products.push({
     id: i,
     name: `محصول شماره ${i}`,
-    image: `images/product${i}.jpg`,
+    image: `images/product${i}.webp`,
     price: `${(i * 10000).toLocaleString('fa-IR')} تومان`,
     description: "توضیحات نمونه برای این محصول."
   });

@@ -6,6 +6,11 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 body {
   font-family: sans-serif;
   background: #f5f6f7;
@@ -68,7 +73,7 @@ body {
 .hero {
   height: 100vh;
   width: 100%;
-  background: url('../images/hero-bg.webp') center/cover no-repeat;
+  background: url('../images/hero-bg1.webp') center/cover no-repeat;
   padding-top: 80px;
   animation: fadeInUp 0.8s ease-out;
   box-sizing: border-box;
@@ -90,7 +95,7 @@ body {
 
 .hero-txt{
   height: fit-content;
-  background: rgba(24, 22, 22, 0.5);
+  background: rgba(24, 22, 22, 0.8);
   border-radius: 20px;
   padding: 32px;
   margin-bottom: 20px;
@@ -136,7 +141,9 @@ body {
 
 .hero-actions {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
   align-items: center;
 }
@@ -145,12 +152,12 @@ body {
   padding: 16px 32px;
   border-radius: 30px;
   border: 3px solid #fff;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(43, 42, 42, 0.8);
   color: #f3eff1;
   font-size: x-large;
   font-weight: bolder;
   cursor: pointer;
-  width: 100%;
+  width: 35%;
 }
 
 .products-section {
@@ -284,6 +291,10 @@ body {
 
 
 @media (max-width: 768px) {
+.hero{
+  background: url('../images/hero-bg2.webp') center/cover no-repeat;
+}
+
   .hero-txt{
     padding: 32px;
     margin: 10px;

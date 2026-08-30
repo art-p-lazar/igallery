@@ -4,7 +4,7 @@ const URLS_TO_CACHE = [
   './index.html',
   './css/style.css',
   './js/app.js',
-  './images/signboard.jpg'
+  './images/signboard.webp'
 ];
 
 self.addEventListener('install', event => {
