@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8">
+    <title>گالری دیجیتال پونه لازار</title>
+    
+    <!-- PWA -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#222222">
+    
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    
+    <!-- هدر -->
+    <header class="top-header">
+      <div class="header-logo">
+        <img src="images/signboard.jpg" alt="لوگو">
+      </div>
+      
+      <div class="hamburger" id="hamburgerBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+    
+    <!-- صفحه اصلی -->
+    <section id="homeView" class="view active">
+      
+      <section class="hero">
+        <div class="hero-inner">
+          
+          <div class="hero-logo">
+            <img src="images/signboard.jpg" alt="تابلو">
+          </div>
+          
+          <h1 class="hero-title">گالری دیجیتال پونه لازار</h1>
+          <p class="hero-desc">جهت مطالعه اطلاعات عصر مد نظر خود کد آن را جست و جو نمایید</p>
+          
+          <div class="hero-search">
+            <input id="searchInput" type="number" placeholder="کد محصول">
+            <button id="searchBtn">جستجو</button>
+          </div>
+          
+          <div class="hero-actions">
+            <button class="hero-scroll-btn" id="scrollToProducts">رفتن به لیست محصولات</button>
+            <button class="hero-footer-btn" id="scrollToFooter">رفتن به فوتر</button>
+          </div>
+          
+        </div>
+      </section>
+      
+      <!-- لیست محصولات -->
+      <section id="productsSection" class="products-section">
+        <div class="products-title">لیست محصولات</div>
+        
+        <div id="productsGrid" class="products-grid"></div>
+        
+        <button id="showMoreBtn" class="show-more-btn">نمایش بیشتر ▼</button>
+      </section>
+      
+    </section>
+    
+    <!-- صفحه محصول -->
+    <section id="productView" class="view product-view">
+      <button class="back-btn" onclick="location.hash=''">بازگشت</button>
+      
+      <div class="product-layout">
+        <img id="productImage" src="">
+        <div>
+          <h1 id="productTitle"></h1>
+          <div id="productPrice"></div>
+          <p id="productDescription"></p>
+          <p id="productCode"></p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- فوتر -->
+    <footer id="footer" class="footer">
+      <div class="footer-logo">
+        <img src="images/signboard.jpg" alt="لوگو">
+      </div>
+      
+      <p>آدرس: اصفهان، خیابان مثال</p>
+      <p>تلفن: 0912...</p>
+      <p>ایمیل: example@mail.com</p>
+      
+      <div class="socials">
+        <a href="#">Instagram</a>
+        <a href="#">Telegram</a>
+        <a href="#">WhatsApp</a>
+      </div>
+    </footer>
+    
+    <script src="js/app.js"></script>
+    
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js')
+        .then(reg => console.log('Service Worker Registered', reg))
+        .catch(err => console.log('SW registration failed', err));
+      }
+    </script>
+  </body>
+</html>
