@@ -294,21 +294,20 @@ body {
 @media (max-width: 768px) {
 .hero{
   background: url('../images/hero-bg2.webp') center/cover no-repeat;
-}
-
-  .hero-txt{
-    margin: 0;
-    padding: 0;
-    padding-right: 4rem;
-    padding-bottom: 20rem;
-    background: none;
-  }
-  
+}  
   .hero-logo img {
     width: 80%;
     max-width: 320px;
     max-height: 80px;
     margin-top: 4px;
+  }
+
+  .hero-txt{
+    margin: 0;
+    padding: 0;
+    padding-right: 4rem;
+    padding-bottom: 15rem;
+    background: none;
   }
   
   
