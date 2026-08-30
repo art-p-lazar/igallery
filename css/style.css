@@ -305,24 +305,23 @@ body {
   .hero-txt{
     margin: 0;
     padding: 0;
-    padding-right: 4rem;
-    padding-bottom: 10rem;
+    padding-bottom: 8rem;
     background: none;
   }
   
   
   .hero-title {
-    font-size: 32px;
+    font-size: 30px;
   }
   
   .hero-search input {
     width: 65%;
-    font-size: 18px;
+    font-size: 15px;
   }
   
   .hero-search button,
   .hero-actions button {
-    font-size: 18px;
+    font-size: 12px;
   }
   
   .product-layout {
