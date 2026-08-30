@@ -3,7 +3,7 @@ const products = [];
 for (let i = 1; i <= 300; i++) {
   products.push({
     id: i,
-    name: `محصول شماره ${i}`,
+    name: `اثر شماره ${i}`,
     image: `images/product${i}.webp`,
     price: `${(i * 10000).toLocaleString('fa-IR')} تومان`,
     description: "توضیحات نمونه برای این محصول."
@@ -17,7 +17,7 @@ products.forEach(p => {
     <div class="product-card">
       <img src="${p.image}">
       <h3>${p.name}</h3>
-      <p>کد محصول: ${p.id}</p>
+      <p>کد : ${p.id}</p>
       <button onclick="location.hash='product/${p.id}'">مشاهده محصول</button>
     </div>`;
 });
@@ -92,7 +92,7 @@ document.getElementById("searchBtn").addEventListener("click", () => {
   if (product) {
     location.hash = `product/${product.id}`;
   } else {
-    alert("محصولی با این کد پیدا نشد.");
+    alert("اثری با این کد پیدا نشد.");
   }
 });
 
