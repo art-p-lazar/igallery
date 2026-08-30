@@ -3,22 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <title>گالری دیجیتال پونه لازار</title>
-    
-    <!-- PWA -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#222222">
-    
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    
-    <!-- هدر -->
     <header class="top-header">
-      <div class="header-logo">
-        <img src="images/signboard.jpg" alt="لوگو">
-      </div>
-      
+      <div class="hero-logo">
+        <img src="images/signboard.jpg" alt="تابلو">
+      </div> 
       <div class="hamburger" id="hamburgerBtn">
         <span></span>
         <span></span>
@@ -26,33 +20,28 @@
       </div>
     </header>
     
-    <!-- صفحه اصلی -->
     <section id="homeView" class="view active">
       
       <section class="hero">
         <div class="hero-inner">
-          
-          <div class="hero-logo">
-            <img src="images/signboard.jpg" alt="تابلو">
+          <div class="hero-txt">
+            <h1 class="hero-title">گالری دیجیتال پونه لازار</h1>
+            <p class="hero-desc">جهت مطالعه شناسنامه اثر،67 کد آن را جست و جو نمایید</p>
           </div>
           
-          <h1 class="hero-title">گالری دیجیتال پونه لازار</h1>
-          <p class="hero-desc">جهت مطالعه اطلاعات عصر مد نظر خود کد آن را جست و جو نمایید</p>
-          
           <div class="hero-search">
-            <input id="searchInput" type="number" placeholder="کد محصول">
             <button id="searchBtn">جستجو</button>
+            <input id="searchInput" type="number" placeholder="کد محصول">
           </div>
           
           <div class="hero-actions">
-            <button class="hero-scroll-btn" id="scrollToProducts">رفتن به لیست محصولات</button>
-            <button class="hero-footer-btn" id="scrollToFooter">رفتن به فوتر</button>
+            <button class="hero-scroll-btn" id="scrollToProducts">لیست آثار</button>
+            <button class="hero-footer-btn" id="scrollToFooter">آدرس گالری</button>
           </div>
           
         </div>
       </section>
       
-      <!-- لیست محصولات -->
       <section id="productsSection" class="products-section">
         <div class="products-title">لیست محصولات</div>
         
@@ -63,7 +52,6 @@
       
     </section>
     
-    <!-- صفحه محصول -->
     <section id="productView" class="view product-view">
       <button class="back-btn" onclick="location.hash=''">بازگشت</button>
       
@@ -78,7 +66,6 @@
       </div>
     </section>
     
-    <!-- فوتر -->
     <footer id="footer" class="footer">
       <div class="footer-logo">
         <img src="images/signboard.jpg" alt="لوگو">
